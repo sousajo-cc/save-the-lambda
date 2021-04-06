@@ -10,19 +10,8 @@ export default class KeyState {
 	useKeyPressed(event) {
 		const keyPressed = event.key.replace("Arrow", "").toLowerCase().toString();
 		if(this.keyStates.has(keyPressed)){
-			this.walk(keyPressed);
 			event.preventDefault();
 			return keyPressed;
 		}
-	}
-
-	walk(dir){
-		console.log(dir)
-	}
-
-	listen(window){
-		window.addEventListener('keydown', event => {
-			this.useKeyPressed(event);
-		});
 	}
 };
