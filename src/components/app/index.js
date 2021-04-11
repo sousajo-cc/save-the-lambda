@@ -3,6 +3,7 @@ import {loadMapSprites, loadNpcSprites, loadHeroSprite} from './loaders.js';
 import {drawMap} from './map.js';
 import KeyState from './keyState.js'
 import Hero from './hero.js'
+
 export default class App {
     constructor (elem) {
       if (!elem) return
@@ -16,11 +17,15 @@ export default class App {
 
 // TODO: 
 // get rid of this promise hell
+// use this instead:
+// Promise.all([promise1, promise2, promise3]).then((values) => {
+//  console.log(values);
+//});
       loadMapSprites()
         .then(sprites => {
           loadNpcSprites().
           then(npcSprites => {
-            drawMap(sprites, npcSprites, context);
+            drawMap(sprites, npcSprites, context); // draw this to buffer to draw onluy once
             loadHeroSprite()
               .then(heroSprite =>{
                 const input = new KeyState();
@@ -30,24 +35,8 @@ export default class App {
                   heroSprite.draw('start_pos', context, this.x, this.y);
                 }
 
-
+                // TODO: this does nothing
                 hero.updatePosition = function updateHeroPos(dir){
-                  /*switch(dir){
-                      case "up":
-                          this.y -= 70;
-                          break;
-                      case "down":
-                          this.y += 70;
-                          break;
-                      case "right":
-                          this.x += 70;
-                          break;
-                      case "left":
-                          this.x -= 70;
-                          break;
-                  }*/
-                  console.log("here");
-                  console.log(dir);
                   this.move(dir);
                 }
 
@@ -67,7 +56,6 @@ export default class App {
                       });
                     });
                   hero.draw(context);
-                  //hero.updatePosition();
                   requestAnimationFrame(updatePos);
                 }
                 updatePos();

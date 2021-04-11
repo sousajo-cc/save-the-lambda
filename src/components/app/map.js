@@ -38,11 +38,9 @@ export function drawMap(spritesMap, spritesNpc, context){
                 case 3:
                     //TODO: create flag and check here if already displayed
                     spritesMap.draw('brown_exclamation_block', context, x*70, y*70);
-                    // trigger msg
                     break;
                 case 8:
                     spritesMap.draw('brown_exclamation_block', context, x*70, y*70);
-                    // you will die here
                     break;
                 case 9:
                     spritesMap.draw('win', context, x*70, y*70);

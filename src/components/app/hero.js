@@ -13,8 +13,17 @@ export default class Hero {
 	constructor(){
 		this.x = 0;
 		this.y = 0;
+		this.msgWarningPathText = "Which path you want to take?\n" +
+      "Both paths are dangerous but you need to decide now.\n" +
+      "Up is the longest path, Down the shortest...\n" +
+      "Which one will let you live and find the lost lambda?\n" +
+      "Remember...choosing the wrong one will kill you little hero."
 		this.pathMsgShown = false;
-		this.randomMsgsToShow = ["0","1","2","3","4"];
+		this.randomMsgsToShow = ["Here again?\nYou need to decide where to go and face your destiny.",
+      "Going back now is not an option my dear.",
+      "I already told you what to expect.",
+      "Forward is the path my little blue friend.",
+      "Try to go Up.\n Or maybe Down.\n Ehehehehe..."];
 	}
 
 
@@ -23,15 +32,14 @@ export default class Hero {
                y: this.y + modifier[dir].y,
         };
 
-        console.log(posToCheck);
         if ((posToCheck.x < 560 && posToCheck.x >= 0) &&  (posToCheck.y < 560 && posToCheck.y >= 0)){
         	if((map[posToCheck.y/70][posToCheck.x/70]===0 || map[posToCheck.y/70][posToCheck.x/70] === 3)){
 			    if (map[posToCheck.y/70][posToCheck.x/70] === 3){
 			    	if(!this.pathMsgShown){
 			    		this.pathMsgShown = true;
-			    		alert("what path you want to take?");
+			    		alert(this.msgWarningPathText);
 			    	}else{
-			    		const rand = Math.floor(Math.random() * 4);
+			    		const rand = Math.floor(Math.random() * 5);
 			    		alert(this.randomMsgsToShow[rand]);
 			    	}
 			    }
@@ -43,6 +51,11 @@ export default class Hero {
 				// eslint-disable-next-line no-restricted-globals
         		location.reload();
         	}
+          if (map[posToCheck.y/70][posToCheck.x/70] === 8){
+            alert("you died :(!\n Try again...");
+            // eslint-disable-next-line no-restricted-globals
+            location.reload();
+          }
         }        
 	//}
 }

@@ -4,4 +4,24 @@
   background-size: cover;
   min-height: 10em;
   color: #222;
+  
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.4fr 1.1fr 1.5fr;
+  gap: 0px 0px;
+  background-color: #FFECB3;
+  grid-template-areas:
+    ". . . ."
+    "etcArea gameFrame gameFrame gameFrame"
+    "etcArea gameFrame gameFrame gameFrame";
+}
+
+.gameFrame { grid-area: gameFrame;display: flex;
+  justify-content: center;
+  align-items: center; 
+  background-color: #FFECB3; }
+
+.etcArea { grid-area: etcArea; }
