@@ -63,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "5f46760bab751384cec5";
+/******/ 	var hotCurrentHash = "4ebd311f7ac997ea2615";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -866,7 +866,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"[data-component=app] {\\n  padding: 1em;\\n  background-image: linear-gradient(90deg, #a8caba 0%, #5d4157 100%);\\n  background-size: cover;\\n  min-height: 10em;\\n  color: #222;\\n  \\n}\\n\\n.grid-container {\\n  display: grid;\\n  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;\\n  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;\\n  gap: 0 0;\\n  background-color: #FFECB3;\\n  grid-template-areas:\\n    \\\". . . . . .\\\"\\n    \\\"etcArea gameFrame gameFrame gameFrame gameFrame .\\\"\\n    \\\"etcArea gameFrame gameFrame gameFrame gameFrame .\\\"\\n    \\\"etcArea gameFrame gameFrame gameFrame gameFrame .\\\"\\n    \\\"etcArea gameFrame gameFrame gameFrame gameFrame .\\\"\\n    \\\". . . . . .\\\";\\n}\\n\\n\\n.gameFrame { grid-area: gameFrame;display: flex;\\n  justify-content: center;\\n  align-items: center; \\n  background-color: #FFECB3; }\\n\\n.etcArea {\\n  grid-area: etcArea;\\n  font: small-caps bold 24px/1 sans-serif;\\n  display: flex; \\n  justify-content: flex-end;\\n}\\n.p {\\n  align-content: center; \\n  font: small-caps bold 24px/1 sans-serif;\\n  justify-content: center;\\n  align-items: center;\\n}\\n\", \"\"]);\n\n\n\n//# sourceURL=webpack:///./src/components/app/index.css?./node_modules/css-loader/dist/cjs.js");
+eval("exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"[data-component=app] {\\n  padding: 1em;\\n  background-image: linear-gradient(90deg, #a8caba 0%, #5d4157 100%);\\n  background-size: cover;\\n  min-height: 10em;\\n  color: #222;\\n  \\n}\\n\\n.grid-container {\\n  display: grid;\\n  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;\\n  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;\\n  gap: 0 0;\\n  background-color: #FFECB3;\\n  grid-template-areas:\\n    \\\". . . . . .\\\"\\n    \\\"etcArea gameFrame gameFrame gameFrame gameFrame .\\\"\\n    \\\"etcArea gameFrame gameFrame gameFrame gameFrame .\\\"\\n    \\\"etcArea gameFrame gameFrame gameFrame gameFrame .\\\"\\n    \\\"etcArea gameFrame gameFrame gameFrame gameFrame .\\\"\\n    \\\". . . . . .\\\";\\n}\\n\\n\\n.gameFrame { grid-area: gameFrame;display: flex;\\n  justify-content: center;\\n  align-items: center; \\n  background-color: #FFECB3; }\\n\\n.etcArea {\\n  grid-area: etcArea;\\n  font: small-caps bold 24px/1 sans-serif;\\n}\\n.p {\\n  align-content: center; \\n  font: small-caps bold 24px/1 sans-serif;\\n  justify-content: center;\\n  align-items: center;\\n}\\n\", \"\"]);\n\n\n\n//# sourceURL=webpack:///./src/components/app/index.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
