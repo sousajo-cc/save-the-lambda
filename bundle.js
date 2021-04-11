@@ -63,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "28840bd6eec14faa4e48";
+/******/ 	var hotCurrentHash = "471f8e573490fdf1729c";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -866,7 +866,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"[data-component=app] {\\n  padding: 1em;\\n  background-image: linear-gradient(90deg, #a8caba 0%, #5d4157 100%);\\n  background-size: cover;\\n  min-height: 10em;\\n  color: #222;\\n  \\n}\\n\\n.grid-container {\\n  display: grid;\\n  grid-template-columns: 1fr 1fr 1fr 1fr;\\n  grid-template-rows: 0.4fr 1.1fr 1.5fr;\\n  gap: 0px 0px;\\n  background-color: #FFECB3;\\n  grid-template-areas:\\n    \\\". . . .\\\"\\n    \\\"etcArea gameFrame gameFrame gameFrame\\\"\\n    \\\"etcArea gameFrame gameFrame gameFrame\\\";\\n}\\n\\n.gameFrame { grid-area: gameFrame;display: flex;\\n  justify-content: center;\\n  align-items: center; \\n  background-color: #FFECB3; }\\n\\n.etcArea { grid-area: etcArea; }\\n\", \"\"]);\n\n\n\n//# sourceURL=webpack:///./src/components/app/index.css?./node_modules/css-loader/dist/cjs.js");
+eval("exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"[data-component=app] {\\n  padding: 1em;\\n  background-image: linear-gradient(90deg, #a8caba 0%, #5d4157 100%);\\n  background-size: cover;\\n  min-height: 10em;\\n  color: #222;\\n  \\n}\\n\\n.grid-container {\\n  display: grid;\\n  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;\\n  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;\\n  gap: 0px 0px;\\n  background-color: #FFECB3;\\n  grid-template-areas:\\n    \\\". . . . . .\\\"\\n    \\\"etcArea gameFrame gameFrame gameFrame gameFrame .\\\"\\n    \\\"etcArea gameFrame gameFrame gameFrame gameFrame .\\\"\\n    \\\"etcArea gameFrame gameFrame gameFrame gameFrame .\\\"\\n    \\\"etcArea gameFrame gameFrame gameFrame gameFrame .\\\"\\n    \\\". . . . . .\\\";\\n}\\n\\n\\n.gameFrame { grid-area: gameFrame;display: flex;\\n  justify-content: center;\\n  align-items: center; \\n  background-color: #FFECB3; }\\n\\n.etcArea { grid-area: etcArea; }\\n\", \"\"]);\n\n\n\n//# sourceURL=webpack:///./src/components/app/index.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
