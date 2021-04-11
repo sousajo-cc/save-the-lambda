@@ -9,19 +9,32 @@
 
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.4fr 1.1fr 1.5fr;
-  gap: 0px 0px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0 0;
   background-color: #FFECB3;
   grid-template-areas:
-    ". . . ."
-    "etcArea gameFrame gameFrame gameFrame"
-    "etcArea gameFrame gameFrame gameFrame";
+    ". . . . . ."
+    "etcArea gameFrame gameFrame gameFrame gameFrame ."
+    "etcArea gameFrame gameFrame gameFrame gameFrame ."
+    "etcArea gameFrame gameFrame gameFrame gameFrame ."
+    "etcArea gameFrame gameFrame gameFrame gameFrame ."
+    ". . . . . .";
 }
+
 
 .gameFrame { grid-area: gameFrame;display: flex;
   justify-content: center;
   align-items: center; 
   background-color: #FFECB3; }
 
-.etcArea { grid-area: etcArea; }
+.etcArea {
+  grid-area: etcArea;
+  font: small-caps bold 24px/1 sans-serif;
+}
+.p {
+  align-content: center; 
+  font: small-caps bold 24px/1 sans-serif;
+  justify-content: center;
+  align-items: center;
+}
