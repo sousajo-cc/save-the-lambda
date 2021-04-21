@@ -48,7 +48,7 @@ export default class Hero {
         	}
         	if (map[posToCheck.y/70][posToCheck.x/70] === 9){
         		alert("you saved the lambda!");
-				// eslint-disable-next-line no-restricted-globals
+				    // eslint-disable-next-line no-restricted-globals
         		location.reload();
         	}
           if (map[posToCheck.y/70][posToCheck.x/70] === 8){

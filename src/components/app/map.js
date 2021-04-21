@@ -17,7 +17,7 @@ export const map = [
     [0,0,3,0,8,0,9,1],
     [1,1,1,1,1,1,1,1],
 ]
-
+0
 export const MAP_WIDTH = 7
 export const MAP_HEIGHT = 7
 
@@ -36,7 +36,6 @@ export function drawMap(spritesMap, spritesNpc, context){
                     spritesNpc.draw('npc', context, x*70, y*70);
                     break;
                 case 3:
-                    //TODO: create flag and check here if already displayed
                     spritesMap.draw('brown_exclamation_block', context, x*70, y*70);
                     break;
                 case 8:
